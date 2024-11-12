@@ -1,0 +1,3 @@
+module CLMDB {
+  header "lmdb.h"
+}
