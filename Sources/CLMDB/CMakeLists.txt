@@ -1,7 +1,7 @@
-add_library(CLMDB STATIC
+add_library(LMDB
   mdb.c
   midl.c)
-target_include_directories(CLMDB PUBLIC
+target_include_directories(LMDB PUBLIC
   include)
 
-set_property(GLOBAL APPEND PROPERTY LMDB_EXPORTS CLMDB)
+set_property(GLOBAL APPEND PROPERTY LMDB_EXPORTS LMDB)
