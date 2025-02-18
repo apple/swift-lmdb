@@ -26,6 +26,7 @@ let package = Package(
                         // Windows does not use POSIX mutex
                         .when(platforms: [.linux, .macOS])),
                 .define("MDB_USE_ROBUST", to: "0"),
+                .unsafeFlags(["-Wno-shorten-64-to-32"])
             ]),
     ],
     cLanguageStandard: .c11
